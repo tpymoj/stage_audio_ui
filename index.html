@@ -24,11 +24,16 @@
                 color: white;
                 border-radius: 50%;
                 display: flex;
+                cursor: pointer;
                 transition: box-shadow 0.18s cubic-bezier(0.0, 0.0, 0.2, 1);
             }
 
             .btn:hover {
                 box-shadow: 0vw 0.2vw 2vw rgba(0,0,0,0.35);
+            }
+
+            .btn:disabled {
+                cursor:not-allowed;
             }
 
             .btn svg {
@@ -57,6 +62,16 @@
         </style>
     </head>
     <body>
+        <audio id="rightAudio">
+                <source src="right.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+        </audio>
+
+        <audio id="wrongAudio">
+                <source src="wrong.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+        </audio>
+
         <div class="btn-container">
             <button id="right" class="btn btn__right">
                 <svg width="291" height="291" viewBox="0 0 291 291" fill="none" xmlns="http://www.w3.org/2000/svg">
