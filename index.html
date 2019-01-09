@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>尾牙徵答音效介面</title>
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+            }
+
+            .btn-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                height: 100%;
+            }
+
+            .btn {
+                height: 30vw;
+                width: 30vw;
+                border: 1px solid rgb(230,230,230);
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                transition: box-shadow 0.18s cubic-bezier(0.0, 0.0, 0.2, 1);
+            }
+
+            .btn:hover {
+                box-shadow: 0vw 0.2vw 2vw rgba(0,0,0,0.35);
+            }
+
+            .btn svg {
+                fill: white;
+                height: 100%;
+                width: 100%;
+                align-self: center;
+            }
+
+            .btn__right {
+                background-color: #00c853;
+            }
+
+            .btn__right:focus {
+                background-color: #00ff6a;
+            }
+
+            .btn__wrong {
+                background-color: #d50000;
+            }
+
+            .btn__wrong:focus {
+                background-color: #ff0000;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="btn-container">
+            <button id="right" class="btn btn__right">
+                <svg width="291" height="291" viewBox="0 0 291 291" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M120.898 174.966L94.803 149.027C91.8702 146.112 87.1325 146.112 84.1996 149.027C81.2668 151.943 81.2668 156.652 84.1996 159.567L115.634 190.814C118.567 193.729 123.304 193.729 126.237 190.814L205.8 111.726C208.733 108.811 208.733 104.102 205.8 101.186C202.868 98.2712 198.13 98.2712 195.197 101.186L120.898 174.966Z" fill="white"/>
+                </svg>                    
+            </button>
+            <button id="wrong" class="btn btn__wrong">
+                <svg width="291" height="291" viewBox="0 0 291 291" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M197.638 197.638C192.909 202.366 185.27 202.366 180.541 197.638L145.5 162.596L110.459 197.638C105.73 202.366 98.0913 202.366 93.3625 197.638C88.6338 192.909 88.6338 185.27 93.3625 180.541L128.404 145.5L93.3625 110.459C88.6338 105.73 88.6338 98.0913 93.3625 93.3625C98.0913 88.6338 105.73 88.6338 110.459 93.3625L145.5 128.404L180.541 93.3625C185.27 88.6338 192.909 88.6338 197.638 93.3625C202.366 98.0913 202.366 105.73 197.638 110.459L162.596 145.5L197.638 180.541C202.245 185.149 202.245 192.909 197.638 197.638Z" fill="white"/>
+                </svg>                                        
+            </button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
